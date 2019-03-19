@@ -1,6 +1,8 @@
 //
 // Created by BugenZhao on 2019/3/18.
 //
+// 以最高处二分
+
 #include <iostream>
 #include <vector>
 

@@ -1,6 +1,7 @@
 //
 // Created by BugenZhao on 2019/3/17.
 //
+// 线性探测
 
 #include <iostream>
 

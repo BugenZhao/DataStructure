@@ -1,6 +1,7 @@
 //
 // Created by BugenZhao on 2019/3/17.
 //
+// 线段覆盖 右端点贪心
 
 #include <iostream>
 #include <algorithm>

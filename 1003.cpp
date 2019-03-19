@@ -1,6 +1,7 @@
 //
 // Created by BugenZhao on 2019/3/16.
 //
+// 广度优先搜索
 
 #include <iostream>
 #include <algorithm>
@@ -8,7 +9,7 @@
 
 using namespace std;
 
-int maxN = 100 + 5;
+int N = 100 + 5;
 
 class Point {
 public:
@@ -24,7 +25,7 @@ Point ds[] = {{-1, 0},
 int main() {
     int L;
     cin >> L;
-    int table[maxN][maxN];
+    int table[N][N];
     queue<Point> q;
     for (int i = 1; i <= L; ++i) {
         for (int j = 1; j <= L; ++j) {

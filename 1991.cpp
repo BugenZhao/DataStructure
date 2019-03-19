@@ -1,7 +1,7 @@
 //
 // Created by BugenZhao on 2019/3/17.
 //
-// TLE
+// 二分答案
 
 /*
 #include <iostream>

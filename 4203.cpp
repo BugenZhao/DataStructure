@@ -1,7 +1,7 @@
 //
 // Created by BugenZhao on 2019/3/17.
 //
-// TLE
+// 组合数计算 数论倒数
 
 #include <iostream>
 #include <algorithm>
@@ -9,15 +9,14 @@
 
 using namespace std;
 
-
 using ll=long long;
 
-constexpr int maxN = 100000 + 5;
+constexpr int N = 100000 + 5;
 
 constexpr ll p = 1e9 + 7;
-ll fac[maxN] = {1, 1};
-ll f[maxN] = {1, 1};
-ll inv[maxN] = {1, 1};
+ll fac[N] = {1, 1};
+ll f[N] = {1, 1};
+ll inv[N] = {1, 1};
 
 ll pow(ll x, ll y) {
     if (y == 0) return 1;
@@ -44,6 +43,6 @@ int main() {
     cin >> T;
     while (T--) {
         scanf("%d%d", &n, &m);
-        printf("%d\n", c(n, m));
+        printf("%lld\n", c(n, m));
     }
 }

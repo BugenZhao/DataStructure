@@ -1,6 +1,7 @@
 //
 // Created by BugenZhao on 2019/3/18.
 //
+// 前n项和 同余
 
 #include <iostream>
 #include <algorithm>

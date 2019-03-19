@@ -1,6 +1,7 @@
 //
 // Created by BugenZhao on 2019/3/16.
 //
+// 简单线性表实现
 
 #include <iostream>
 #include <string>
