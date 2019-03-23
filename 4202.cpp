@@ -2,6 +2,7 @@
 // Created by BugenZhao on 2019/3/18.
 //
 // 环拆链 动态规划
+// 0 矮 1 两边高的中等 2 两边低的中等 3 高
 
 #include <cstdio>
 #include <algorithm>
