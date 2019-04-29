@@ -11,7 +11,7 @@ using namespace std;
 
 using ll=long long;
 
-bool isPrime[] = {0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0,
+bool notPrime[] = {0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0,
                   1, 0, 0, 0, 0, 0, 1, 0, 1};
 
 int nums[20];
@@ -21,7 +21,7 @@ int N;
 
 void search(int current) {
     if (current == N) {
-        if (isPrime[nums[0] + nums[N - 1]]) {
+        if (notPrime[nums[0] + nums[N - 1]]) {
             for (int i = 0; i < N; ++i) {
                 printf("%d ", nums[i]);
             }
@@ -30,7 +30,7 @@ void search(int current) {
         }
     } else {
         for (int i = 2; i <= N; ++i) {
-            if (!vis[i] && isPrime[i + nums[current - 1]]) {
+            if (!vis[i] && notPrime[i + nums[current - 1]]) {
                 nums[current] = i;
                 vis[i] = true;
                 search(current + 1);
